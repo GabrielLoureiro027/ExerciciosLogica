@@ -1,0 +1,7 @@
+1-Solicitando o número
+
+2-Com o valor em mãos o algoritimo irá verificar os últimos números
+
+3-Se terminar 0,2,4,6,8 é par. Se terminar com 1,3,5,7,9 é ímpar
+
+4-Resultado é X

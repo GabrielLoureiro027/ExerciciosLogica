@@ -1,0 +1,7 @@
+1-Primeiramente o algotitimo tem que pedir as duas notas
+
+2-Em seguida você tem que pegar o valor das duas notas e dividir por 2
+
+3-Depois de fazer esse calculo, vai dar X valor
+
+4-E esse X valor é a média Aritimética

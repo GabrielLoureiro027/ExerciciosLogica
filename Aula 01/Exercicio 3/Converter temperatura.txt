@@ -1,0 +1,5 @@
+1-Solicitando a temperatura em Celsius
+
+2-Em seguida o Algoritimo irá calcular com a fórmula Fahrenheit = (Celsius * 9/5) + 32.
+
+3-Resultado em Ferenheit X
