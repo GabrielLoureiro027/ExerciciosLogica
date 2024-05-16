@@ -2,6 +2,6 @@
 
 2-Com o valor em mãos vamos calcular. Mas seguindo a regra que todos os números inteiros positivos menores ou iguais a esse número
 
-3-5= 5 * 4 * 3 * 2 * 1 = 12
+3-5= 5 * 4 * 3 * 2 * 1 = 120
 
-4-5= 5 * 4 * 3 * 2 * 1 = 12
+4-Resultado é X
