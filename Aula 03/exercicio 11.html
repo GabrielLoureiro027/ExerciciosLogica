@@ -9,8 +9,22 @@
     
     <script>
 
-        let nivel = parseFloat(prompt("Digite o nível do professor"))
-        
+        let nivel = prompt("Digite qual o nível do professor. Nível 1,2 ou 3");
+
+         switch (nivel){
+            case "1":
+                alert("Professor Nível 1 R$12,00 por hora/aula ") ; 
+                break;
+            case "2":
+                alert("Professor Nível 2 R$17,00 por hora/aula  ") ; 
+                break
+            case "3":
+                alert("Professor Nível 3 R$25,00 por hora/aula  ") ; 
+                break;
+                reak;
+            default:
+                alert("Invalido, digite um numero de 1 a 3");
+         }
 
     </script>
     
