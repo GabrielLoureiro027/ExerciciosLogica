@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let produto1_custo = parseInt(prompt("Digite o custo do produto1"));
+        let produto1_venda = parseInt(prompt("Digite o custo do venda produto1"));
+
+        let produto2_custo = parseInt(prompt("Digite o custo do produto2"));
+        let produto2_venda = parseInt(prompt("Digite o custo do venda produto2"));
+
+        if (produto1_custo > produto1_venda){
+            alert("Você teve prejuízo no produto 1");
+        }
+        else if (produto1_custo == produto1_venda){
+            alert("Você teve empate no produto 1");
+        }
+        else{
+            alert("Você teve lucro produto 1");
+        }
+
+
+
+        if (produto2_custo > produto2_venda){
+            alert("Você teve prejuízo no produto 2");
+        }
+        else if (produto2_custo == produto2_venda){
+            alert("Você teve empate no produto 2");
+        }
+        else{
+            alert("Você teve lucro produto 2");
+        }
+
+        let media_custo = (produto1_custo + produto2_custo)/2;
+        let media_venda = (produto1_venda + produto2_venda)/2;
+
+        alert  ("Media: " + ((produto1_custo + produto2_custo)/2) + "           media:" + media_venda)
+    </script>
+    
+</body>
+</html>
