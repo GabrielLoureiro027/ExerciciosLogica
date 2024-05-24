@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    let nota1 = parseInt(prompt("Digite o o valor da nota1"));   
+    let nota2 = parseInt(prompt("Digite o o valor da nota2")); 
+    let nota3 = parseInt(prompt("Digite o o valor da nota3")); 
+
+    let quantidade1 = parseInt(prompt("Digite a quantidade de alunos tiraram a nota1"));
+    let quantidade2 = parseInt(prompt("Digite a quantidade de alunos tiraram a nota2"));
+    let quantidade3 = parseInt(prompt("Digite a quantidade de alunos tiraram a nota3"));
+
+    let media = ((nota1 + nota2 + nota3) / 3);
+    let pondera = ((nota1 * quantidade1 + nota2 * quantidade2 + nota3 * quantidade3) / 100)
+
+    alert("A média aritmética foi de " + media);
+    alert("A média ponderada foi de " + pondera)
+
+        
+    </script>
+    
+</body>
+</html>

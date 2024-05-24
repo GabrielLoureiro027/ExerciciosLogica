@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let volts = parseFloat(prompt("Digite quantos de volts você consumiu esse mês."));;
+        let tipo_de_propriedade = prompt("Digite qual tipo de propriedade você utilizou essa voltagem (Residência, Comércio e Indústria).")
+
+        let residencia = (volts * 0,60 )
+        let comercio = (volts * 0,48 )
+        let industria = (volts * 1,29)
+
+        switch (tipo_de_propriedade){
+            case "Residência,":
+                alert("A conta de luz da sua residência foi de " + residencia);
+                break;
+
+            case "Comércio":
+                alert("A conta de luz da sua residência foi de " + comercio);
+                break;
+
+            case "Indústria":
+                alert("A conta de luz da sua residência foi de " + industria)
+                break;
+                
+            default:
+                alert("Você não escreveu nenhuma das opções citadas anteriormente! Tenta escreva-las agora! (Residência, Comércio e Indústria)")
+        }
+        
+    </script>
+    
+</body>
+</html>

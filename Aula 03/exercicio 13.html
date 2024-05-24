@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let prova1 = parseFloat(prompt("Digite a nota da prova1"));
+        let prova2 = parseFloat(prompt("Digite a nota da prova2"));
+        let prova3 = parseFloat(prompt("Digite a nota da prova3"));
+        
+        let calculo = ((prova1 + prova2 + prova3) / 3);
+
+        if (calculo >= 10){
+            alert("Você foi aprovado com nota A");
+        }
+        else if(calculo >=7 || 8 > calculo){
+            alert("Você foi aprovado com a nota B");
+        }
+        else if(calculo >=6 || 7 > calculo){
+            alert("Você foi aprovado com a nota D");
+        }
+        else if(calculo >=5 || 6 > calculo){
+            alert("Você foi aprovado com a nota D");
+        }
+        else if(calculo >= 0.5 || 5 > calculo){
+            alert("Você foi aprovado com a nota R");
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
