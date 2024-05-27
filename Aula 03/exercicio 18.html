@@ -9,7 +9,30 @@
     
     <script>
 
+        let salario = parseInt(prompt("Digite o salário"));
+        let cargo = prompt("Digite o cargo (Gerente) (Engenheiro) (Técnico)");
+        let percentual;
 
+        switch (cargo){
+            case "Gerente":
+                percentual = 0.1
+                break;
+            case "Engenheiro":
+                percentual = 0.2
+                break;
+            case "Técnico":
+                percentual = 0.3
+                break;
+            default:
+                cargo * 0.4;
+                break;
+        }
+
+        let multiplicador = salario * percentual;
+        let salario_novo = salario + multiplicador;
+        let subtracao = salario_novo - salario;
+
+        alert(("Salário antigo " + salario + ", salário novo " + salario_novo + ", diferença dos salários " + subtracao))
         
     </script>
     
