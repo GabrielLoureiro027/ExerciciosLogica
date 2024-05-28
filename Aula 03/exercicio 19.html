@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let nome = prompt("Digite o seu nome")
+        let sexo = prompt("Digite o seu sexo (homem) (mulher)")
+        let altura = parseFloat(prompt("Digite a sua altura"))
+        let idade = parseInt(prompt("Digite sua idade"))
+
+        switch (sexo){
+            case "homem":
+                if(altura > 1,70){
+                    if (idade){
+                        idade <= 20
+                        alert(nome + " seu peso ideial é (72.7'h)-58")
+                    }
+                    else if(idade){
+                        idade < 21 && idade > 39
+                        alert(nome+ " seu peso ideial é (72.7'h)-53")
+                    }
+                    else if(idade){
+                        idade >= 40
+                        alert(nome + " seu peso ideial é(72.7'h)-45")
+                    }
+                    else{
+                        alert("Invalido")
+                    }
+                }
+                else if(altura <= 1,70){
+                    if(idade){
+                        idade <= 40
+                        alert(nome + " seu peso ideial é (72.7'h)-50")
+                    }
+                    else if(idade){
+                        idade > 40
+                        alert(nome + " seu peso ideial é (72.7'h)-58")
+                    }
+                }
+                else{
+                    alert("Invalido")
+                }
+                break;
+
+            case "mulher":
+                if(altura > 1,50){
+                    if(idade){
+                        idade >= 35
+                        alert("62.1'h-44,7")
+                    }
+                    else{
+                        alert("Invalido")
+                    }
+                }
+                else if(altura <= 1,50){
+                    if(idade){
+                        idade >= 35
+                        alert("62.1'h-45")
+                    }
+                    else if(idade){
+                        idade < 35
+                        alert("62.1'h-49")   
+                    }
+                    else{
+                        alert("Invalido")
+                    }
+                }
+                default:{
+                    alert("Invalido")
+                }
+
+            break;
+        }
+
+    </script>
+    
+</body>
+</html>

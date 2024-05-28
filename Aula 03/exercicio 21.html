@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+       let nome = prompt("Digite o seu nome")
+       let idade = parseInt(prompt("Digite a sua idade")) 
+       let grupo_de_risco = prompt("Qual o seu grupo de risco (B, M ou H)")
+
+       if(idade > 17 && idade <70){
+        switch (grupo_de_risco) {
+        case "B":
+            alert(nome + " tem " + idade + " faz parte do seguro " + grupo_de_risco)
+            break;
+        case "M":
+            alert(nome + " tem " + idade + " faz parte do seguro " + grupo_de_risco)
+            break;  
+        case "B":
+            alert(nome + " tem " + idade + " faz parte do seguro " + grupo_de_risco)
+            break;   
+       }
+       }
+       else{
+        alert("Somente pessoas com pelo menos 17 anos e não mais de 70 anos podem adquirir apólices de seguro")
+       }
+
+    </script>
+    
+</body>
+</html>
