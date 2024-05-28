@@ -10,18 +10,22 @@
     <script>
 
         let m2 = parseInt(prompt("Digite quantos M² você irá pintar"))
-        let litros_galoes = parseInt(prompt("Litros ou Galões"))
+        let area_para_pintar = (m2 / 6)
 
-        switch (litros_galoes){
-            case "litros":
-            
-                alert("")
-                break;
-            case "galões":
-            \
-                break;
+        let escolha = prompt("Restante de tinta para comprar " + area_para_pintar + " , escolha qual você quer (Latas) (Galão)")
 
+        let latas = (area_para_pintar / 18)
+        let galao = (area_para_pintar / 3.6 )
+
+        switch (escolha){
+            case "Latas":
+                alert("Quantidade de tinta a serem compradas " + latas)
+                break;
+            case "Galão":
+                alert("Quantidade de tinta a serem compradas " + galao)
+                break;
         }
+        
 
     </script>
     
