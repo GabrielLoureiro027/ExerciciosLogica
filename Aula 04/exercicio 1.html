@@ -9,14 +9,20 @@
     
     <script>
 
-        let preço = parseFloat(prompt("Digite o preço do produto"));
 
-        alert("As opções de pagamento são: á vista e parcelado em 3x sem juros");
+        let valoresNegativos = 0;
+
+    for(let a = 0; a < 5; a++ ){
         
-        let calculo_vista = (preço * 0.1);
-        let calculo_juros = (preço / 3);
+        let valor = parseInt(prompt("Digite um numero inteiro"));
 
-        alert("À vista fica " + calculo_vista + ", parcelado em 3x fica " + calculo_juros);
+        if(valor < 0){
+            valoresNegativos++;
+        }
+
+    }
+
+    alert("Quantidade de valores negativos " + valoresNegativos)
 
     </script>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let comeco = parseInt(prompt("Que horas você começou a jogar?"))
+        let final = parseInt(prompt("Que horas você acabou de jogar?"))
+
+        let tempo = final - comeco
+
+        let duração = 
+
+        if(final >= comeco){
+            duração = final - comeco
+        }
+        else{
+            duração = 24 + comeco - final
+        }
+
+        alert("O tempo de duração do jogo foi " + duração + " em horas")
+
+    </script>
+    
+</body>
+</html>
