@@ -13,8 +13,8 @@
     do{
 
         numeroDePessoas++;
-        let salarioPessoaAtual =  parseFloat(prompt("Digite o seu salario"));
-        let numeroFilhos =  parseInt(prompt("Digite o quantidade de filhos"));
+        salarioPessoaAtual =  parseFloat(prompt("Digite o seu salario"));
+        numeroFilhos =  parseInt(prompt("Digite o quantidade de filhos"));
 
         if(salarioPessoaAtual > maiorSalario){
             maiorSalario = salarioPessoaAtual;
@@ -25,12 +25,12 @@
         mediaSalario += salarioPessoaAtual;
         mediaNumeroFilhos += numeroFilhos;
 
-    }
+    }    while(salarioPessoaAtual > 0);
 
-    while(salarioPessoaAtual > 0);
+
 
         alert("Media salario atual de pessoas: " + (mediaSalario/numeroDePessoas) + "\nmedia filhos " + (mediaNumeroFilhos/numeroDePessoas) + "\n Salario atual: " + maiorSalario+
-        "\nPorcentagem de passoas que recebem R$100: " + (percentualPessoaSalario/numeroDePessoas*100 + "%"))
+        "\nPorcentagem de passoas que recebem R$100: " + (percentualPessoaSalario/numeroDePessoas*100) + "%")
        
     
 

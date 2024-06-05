@@ -1,0 +1,22 @@
+<script>
+
+    let chicoAltura = 150;
+    let zeAltura = 110;
+
+    let chicoAlturaCresce = 2;
+    let zeAlturaCresce = 3;
+
+    let anoDigitado = parseInt(prompt("Digite quantos anos para Chico crescer"));
+
+    let calculoChico = (chicoAltura + (anoDigitado * chicoAlturaCresce))
+    let calculoZe = (zeAltura +(anoDigitado * zeAlturaCresce))
+
+    if(calculoChico < calculoZe){
+        alert("Zé vai crescer mais  que o Chico em " + anoDigitado + " ano(s) ")
+    }
+    else(
+        alert("Zé não ultrapassou Chico em " + anoDigitado + " ano(s) ")
+    )
+
+
+</script>
