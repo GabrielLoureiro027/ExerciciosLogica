@@ -1,0 +1,42 @@
+<script>
+
+let coleção = [] 
+let escolha = 1;
+
+
+do{
+    escolha = parseInt(prompt("Digite 1 para adidiconar elemetno\n Digite 2 para mostrar elementos\n Digite 0 para sair"))
+
+    switch(escolha){
+        case 1: 
+            coleção.push(prompt("Digite o elemento que você quer"))
+            break;
+        case 2:
+            alert(coleção.join("\n"))
+            break;;
+        case 0:
+            alert("Você escolheu sair")
+            break;
+        default:
+            alert("Digite u número válido")
+            break;
+            
+    }
+}
+while(escolha != 0)
+
+</script>
+
+<!--   
+
+4.Faça uma coleção que permita ao usuário; 
+
+Selecionar uma das opções entre: 
+Adicionar um novo elemento 
+Mostrar todos os elementos adicionados 
+ Sair do programa 
+Adicionar uma STRING, 
+Mostrar todos os elementos que estão cadastrados 
+Para sair do programa utilize o "0".
+
+-->
