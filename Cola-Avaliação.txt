@@ -1,0 +1,7 @@
+2 - n**= 3;
+4 - n:11 m:11
+6- 20
+10 - true
+11 - true
+12 - depende  da opção selecionada pelo usuario
+14 - "World"
