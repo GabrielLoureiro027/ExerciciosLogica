@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    let cadastrar = {}
+    let produtoEstoqueVenda = 0;
+    let cadastradoQuantidade = produtoEstoqueVenda
+    let produtoPesquisa = 0;
+    let lista = 0;
+
+
+        do{
+
+        cadastrar.nome = prompt("Digite o nome do produto ");
+        cadastrar.preco = parseInt(prompt("Digite o preço"));
+        cadastrar.quantidade = parseInt(prompt("Digite a quantidade"));
+        cadastrar.forneceador = prompt("Digite o fornecedor");
+
+        let mensagem = "Nome: " + cadastrar.nome + "\n" +
+                        "Preço: R$" + cadastrar.preco + ",00\n" +
+                        "Quantidade: " + cadastrar.quantidade + "\n" +
+                        "Fornecedor: " + cadastrar.forneceador;
+                        alert("Produto cadastrado com sucesso")
+        
+        alert(mensagem);
+
+        confirm("Deseja cadastrar outro produto?");
+
+        }
+        while(confirm = false){
+
+            produtoPesquisa = prompt("Digite o produto que você quer vender.");
+    
+            if(cadastrar.nome){
+                if(cadastrar.quantidade >= 1){
+                    alert("Produto pesquisado: " + produtoPesquisa + "\n" + "Estoque disponivel: " + cadastrar.quantidade);
+
+                    produtoEstoqueVenda = parseInt(prompt("Digite a quantidade para vender"));
+                    cadastradoQuantidade -= produtoEstoqueVenda
+
+                    if(cadastradoQuantidade > produtoEstoqueVenda){
+                        cadastrar.quantidade = produtoEstoqueVenda
+                    }
+                    
+                    if(produtoEstoqueVenda >= 1 && produtoEstoqueVenda < cadastrar.quantidade){
+                        alert("Venda realizada com sucesso");
+                        alert("Produto pesquisado: " + produtoPesquisa + "\n" +"Estoque: " + cadastrar.quantidade);
+                    }
+                    else if(produtoEstoqueVenda > cadastrar.quantidade){
+                        alert("Quantidade de venda maior que o estoque");
+                    }
+                    else{
+                        alert("Produto sem estoque");
+                    }
+                   
+
+                }
+            }
+            else{"Nome invalido"}
+
+            produtoPesquisa = prompt("Digite o nome do produto para reabaster")
+            if(cadastrar.nome){
+            
+                alert("Produto pesquisado: " + produtoPesquisa + "\n" + "Estoque disponivel: " + cadastrar.quantidade);
+                reabastecer = parseInt(prompt("Digite a quantidade para reabastecer"));
+                cadastrar.quantidade += reabastecer
+                alert("Produto pesquisado: " + produtoPesquisa + "\n" + "Estoque disponivel: " + cadastrar.quantidade);
+                
+            }
+            else{"Nome invalido"}
+            
+
+        }
+    
+    </script>
+    
+</body>
+</html>
