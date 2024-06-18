@@ -1,0 +1,63 @@
+<script>
+
+    let saldo = 0;
+    let deposito = 0;
+    let saque = 0;
+
+    let contasRegistradas = 0;
+    let contasNegativadas = 0;
+
+    let opcaoSair = -1
+    let opcao = -1
+
+    do{
+
+        let nome = prompt("Digite o seu nome");
+        let email = prompt("Digite seu e-mail");
+        let senha = prompt("Digite sua senha");
+        contasRegistradas++;
+    
+        opcaoSair = parseInt(prompt("Digite 0 para sair do cadastro"));
+        
+
+    }while(opcaoSair !== 0)
+
+    do{
+
+        opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+
+    switch(opcao){
+
+        case 1:
+            deposito = parseFloat(prompt("Digite o valor para depositar"));
+            saldo += deposito;
+            alert(saldo);
+            opcao = -1;
+            opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+            break;
+
+        case 2:
+            saque=  parseFloat(prompt("Digite o valor para saque"));
+
+            if(saque>saldo){ 
+                saldo =-saque
+                alert("Sua conta esta negativada: " + saldo);
+                contasNegativadas++;
+            }
+            else{
+                saldo-=saque
+                    alert("Realizado com sucesso" + saldo);
+                }
+
+            opcao = -1;
+            opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+            break;
+    }   
+    opcao = -1;
+    opcao = parseInt(prompt("Digite 0 para sair do Banco"))
+
+    }while(opcao !== 0)
+
+    alert("Contas registradas: " +contasRegistradas + "\nContas negativadas: " + contasNegativadas)
+
+</script>

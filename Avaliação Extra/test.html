@@ -43,13 +43,9 @@
                     alert("Produto pesquisado: " + produtoPesquisa + "\n" + "Estoque disponivel: " + cadastrar.quantidade);
 
                     produtoEstoqueVenda = parseInt(prompt("Digite a quantidade para vender"));
-                    cadastradoQuantidade -= produtoEstoqueVenda
 
-                    if(cadastradoQuantidade > produtoEstoqueVenda){
-                        cadastrar.quantidade = produtoEstoqueVenda
-                    }
-                    
                     if(produtoEstoqueVenda >= 1 && produtoEstoqueVenda < cadastrar.quantidade){
+                        cadastrar.quantidade -= produtoEstoqueVenda
                         alert("Venda realizada com sucesso");
                         alert("Produto pesquisado: " + produtoPesquisa + "\n" +"Estoque: " + cadastrar.quantidade);
                     }

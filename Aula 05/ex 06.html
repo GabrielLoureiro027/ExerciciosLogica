@@ -1,5 +1,25 @@
 <script>
 
-    let teste =  prompt("hello?" , "world");
+    let altura = 0;
+    let quantidadeDeAlturas = 0;
+    let numeroPessoaMaiorQue2 = 0;
+    let media = 0;
+
+    for(let x = 0; x<20;x++){
+
+        altura = parseFloat(prompt("Digite altura da pessoa: " + x))
+        quantidadeDeAlturas++;
+        
+        if(altura>2.0){
+            numeroPessoaMaiorQue2++;
+        }
+        
+    }
+    while(x=20){
+        
+        media = quantidadeDeAlturas/20;
+        alert("A media aritimetica: " + media + "\nNúmero de pessoas com altura maior que 2 metros: " + numeroPessoaMaiorQue2)
+
+    }
 
 </script>
