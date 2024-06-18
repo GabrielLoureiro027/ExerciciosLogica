@@ -10,33 +10,41 @@
     let opcaoSair = -1
     let opcao = -1
 
-    do{
 
-        let nome = prompt("Digite o seu nome");
-        let email = prompt("Digite seu e-mail");
-        let senha = prompt("Digite sua senha");
-        contasRegistradas++;
-    
-        opcaoSair = parseInt(prompt("Digite 0 para sair do cadastro"));
-        
-
-    }while(opcaoSair !== 0)
 
     do{
 
-        opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+            let nome = prompt("Digite o seu nome");
+            let email = prompt("Digite seu e-mail");
+            let senha = prompt("Digite sua senha");
+            contasRegistradas++;
+            opcao = -1
+            opcao = parseInt(prompt("Digite 0 para fechar o sistema \nDigite 1 para cadastrar uma conta \nDigite 2 para fazer um deposito \nDigite 3 para fazer um saque"));
 
     switch(opcao){
 
-        case 1:
+        case 0:
+            alert("VocÊ saiu do sistema")
+            opcao = -1
+            opcao = parseInt(prompt("Digite 0 para fechar o sistema \nDigite 1 para cadastrar uma conta \nDigite 2 para fazer um deposito \nDigite 3 para fazer um saque"));
+
+        case 1 :
+            let nome = prompt("Digite o seu nome");
+            let email = prompt("Digite seu e-mail");
+            let senha = prompt("Digite sua senha");
+            contasRegistradas++;
+            opcao = -1
+            opcao = parseInt(prompt("Digite 0 para fechar o sistema \nDigite 1 para cadastrar uma conta \nDigite 2 para fazer um deposito \nDigite 3 para fazer um saque"));
+
+        case 2:
             deposito = parseFloat(prompt("Digite o valor para depositar"));
             saldo += deposito;
             alert(saldo);
             opcao = -1;
-            opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+            opcao = parseInt(prompt("Digite 0 para fechar o sistema \nDigite 1 para cadastrar uma conta \nDigite 2 para fazer um deposito \nDigite 3 para fazer um saque"));
             break;
 
-        case 2:
+        case 3:
             saque=  parseFloat(prompt("Digite o valor para saque"));
 
             if(saque>saldo){ 
@@ -50,11 +58,9 @@
                 }
 
             opcao = -1;
-            opcao = parseInt(prompt("Digite 1 para fazer um deposito \nDigite 2 para fazer um saque"));
+            opcao = parseInt(prompt("Digite 0 para fechar o sistema \nDigite 1 para cadastrar uma conta \nDigite 2 para fazer um deposito \nDigite 3 para fazer um saque"));
             break;
     }   
-    opcao = -1;
-    opcao = parseInt(prompt("Digite 0 para sair do Banco"))
 
     }while(opcao !== 0)
 
