@@ -1,71 +1,22 @@
 <script>
 
-    let deposito;
-    let saldo;
+    let vetor = [1,2,3,4,5,6,7,8,9,10]
+    let numero = 0;
+    let sair = -1;
 
-    let contasCadastradas; 
-    let contasNegativadas;
+    do{
 
-    let nome;
-    let email;
-    let senha;
-
-    do(opcao == 0){
-
-        nome = prompt("Digite o seu nome")
-        email = prompt("Digite seu E-mail")
-        senha = prompt("Digite sua senha")
-
-        
-            alert("Conta criada com sucesso! Seu saldo é de R$ 0,00, deposite agora!")
-            opcao = parseInt(prompt("Bem-vindo ao Banco \n Digite 0 para sair do cadastro"))
-    }
-
-    while(opecao = 4){
-
-        switch(opcao){
-
-        case(1):
-            deposito = parseFloat(prompt("Valor a ser depositado"))
-            saldo += deposito
-            alert("Depósito realizado com sucesso! Seu saldo atual é de R$ " + saldo)
-
-            opcao = parseInt(prompt("Bem-vindo ao Banco \n Digite 1 para depositar, 2 para sacar e 3 para fechar o sistama "))
-            break;
-
-        case(2):
-            let saque = parseFloat(prompt("Valor a ser sacado"))
-            if(saldo >= saque){
-            saldo -= saque
-            alert("Saque realizado com sucesso! Seu saldo atual é de R$ " + saldo)
-                
-                if(saldo <= -1){
-                    contasNegativadas++;
-                }
-
-            } 
-        
-            else{
-                alert("Saldo insuficiente")
-            }
-
-            opcao = parseInt(prompt("Bem-vindo ao Banco \n Digite 1 para depositar, 2 para sacar e 3 para fechar o sistama ")) 
-            break;
-
-        case(3):
-
-            if(saldo <= -1)
-            contasNegativadas
-
-            alert("Sistema fechado")
+        numero = (prompt("Digite um numero"))
+        if(numero > 1 && numero < 10){
             
         }
+        else[
+            alert("Numero invalido")
+        ]
 
-        
-        alert("Total de contas cadastradas: " + contasCadastradas + "\n Contas negativadas: " + contasNegativadas);
+        sair = parseInt(prompt("Digite 0 para sair"))
 
     }
-
-
-
+    while(sair != 0)
+        alert("Você saiu")
 </script>

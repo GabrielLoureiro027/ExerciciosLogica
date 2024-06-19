@@ -9,21 +9,18 @@
     
     <script>
 
-        let comeco = parseInt(prompt("Que horas você começou a jogar?"))
-        let final = parseInt(prompt("Que horas você acabou de jogar?"))
+    let horaInicio = parseInt(prompt("Digite a hora de início do jogo (0-23): "));
 
-        let tempo = final - comeco
-
-        let duração = 
-
-        if(final >= comeco){
-            duração = final - comeco
-        }
-        else{
-            duração = 24 + comeco - final
+    let horaFim = parseInt(prompt("Digite a hora do final do jogo (0-23): "));
+ 
+    let duracao = 0;
+        if (horaFim >= horaInicio) {
+        duracao = horaFim - horaInicio;
+        } else {
+        duracao = 24 - horaInicio + horaFim;
         }
 
-        alert("O tempo de duração do jogo foi " + duração + " em horas")
+    alert(`A duração do jogo é de ${duracao} hora(s).`);
 
     </script>
     
