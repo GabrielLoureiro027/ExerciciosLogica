@@ -1,0 +1,79 @@
+<script>
+
+    MostrarExercicio8();
+
+    function MostrarExercicio1 (){
+        alert("Gabriel");
+    }
+
+    function MostrarExercicio2 (){
+        return MostrarExercicio1()  
+    }
+
+    function MostrarExercicio3(){
+        let x = parseFloat(prompt("Digite um numero para Um"))
+        let y =  parseFloat(prompt("Digite um numero para Dois"))
+
+        alert("Soma : " + Somar(x,y) +" \nSubtrair: " + Subtrair(x,y) + "\nMultiplicação: " + Multiplicar(x,y)  + "\nDivisão: " + Divisao(x,y) )
+
+    }
+        function Somar (um,dois){
+            return um + dois
+        }
+        function Subtrair (um,dois){
+            return um - dois
+        }
+        function Multiplicar(um,dois){
+            return um * dois
+        }
+        function Divisao(um,dois){
+            return um / dois
+    }
+
+    function  MostrarExercicio4 (string1,string2){
+        string1= prompt("Digite algo para a string1")
+        string2= prompt("Digite algo para a string2")
+        alert(string1 + string2) 
+    }
+
+    function MostrarExercicio5 (idade){
+        idade = prompt("Digite sua idade")
+        if(idade>=18){
+            alert("Você é maior de idade")
+        }
+        else{
+            alert("Menor de idade")
+        }
+    }
+
+    function MostrarExercicio6 (numero1){
+        numero1 = parseInt(prompt("Digite um numero"))
+        if(numero1 % 2 == 0 ){
+            alert("Este número é par")
+        }
+        else{
+            alert("Este número é ímpar")
+        }
+    }
+
+    function MostrarExercicio7 (n){
+        n = parseInt(prompt("Digite um numero"))
+        for(let j = n; n >= 0; j--){
+            alert(j)
+        }
+    }
+
+    function MostrarExercicio8 (vetor){
+        do{
+            vetor = [];
+        let idade = vetor.push(parseInt(prompt("Digite sua idade")))
+
+        let sair = parseInt(prompt("Digite 0 para sair"))
+        }
+        while(sair == 0)
+        alert(vetor)
+        
+    }
+
+
+</script>
