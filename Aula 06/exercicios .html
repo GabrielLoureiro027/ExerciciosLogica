@@ -1,6 +1,51 @@
 <script>
 
-    MostrarExercicio8();
+    let fechar = -1
+
+    do{
+
+        let escolherExercicios = parseInt(prompt("Digite o numero de de acordo com o exercicio"))
+        
+        switch(escolherExercicios){
+            case 1:
+            MostrarExercicio1();
+            break;
+                case 2:
+                MostrarExercicio2();
+                break;
+                    case 3:
+                    MostrarExercicio3();
+                    break;
+                        case 4:
+                        MostrarExercicio4();
+                        break;
+                            case 5:
+                            MostrarExercicio5();
+                            break;
+                                case 6:
+                                MostrarExercicio6();
+                                break;
+                                    case 7:
+                                    MostrarExercicio7();
+                                    break;
+                                        case 8:
+                                        MostrarExercicio8();
+                                        checarIdades();
+                                        break;
+                                            case 9:
+                                            MostrarExercicio9();
+                                            DescobrirParImpar();
+                                            break;     
+                                                default:
+                                                alert("Numero invalido")
+                                                break;
+                             
+        }   
+
+        fechar = confirm("Aperte ok para continuar e cancelar para fechar")
+
+    }
+    while(fechar == true)      
 
     function MostrarExercicio1 (){
         alert("Gabriel");
@@ -31,49 +76,94 @@
     }
 
     function  MostrarExercicio4 (string1,string2){
-        string1= prompt("Digite algo para a string1")
-        string2= prompt("Digite algo para a string2")
-        alert(string1 + string2) 
+        string1 = prompt("Digite algo para a string1");
+        string2 = prompt("Digite algo para a string2");
+        alert(string1 + string2) ;
     }
 
-    function MostrarExercicio5 (idade){
-        idade = prompt("Digite sua idade")
-        if(idade>=18){
-            alert("Você é maior de idade")
+        function MostrarExercicio5 (idade){
+            idade = prompt("Digite sua idade");
+            if(idade>=18){
+                alert("Você é maior de idade");
+            }
+            else{
+                alert("Menor de idade");
+            }
         }
-        else{
-            alert("Menor de idade")
-        }
-    }
 
     function MostrarExercicio6 (numero1){
-        numero1 = parseInt(prompt("Digite um numero"))
+        numero1 = parseInt(prompt("Digite um numero"));
         if(numero1 % 2 == 0 ){
-            alert("Este número é par")
+            alert("Este número é par");
         }
         else{
-            alert("Este número é ímpar")
+            alert("Este número é ímpar");
         }
     }
 
     function MostrarExercicio7 (n){
-        n = parseInt(prompt("Digite um numero"))
+        let text = ""
+        n = parseInt(prompt("Digite um numero"));
         for(let j = n; n >= 0; j--){
-            alert(j)
+            text += " " + j
+            alert(text);
         }
     }
 
-    function MostrarExercicio8 (vetor){
-        do{
-            vetor = [];
-        let idade = vetor.push(parseInt(prompt("Digite sua idade")))
-
-        let sair = parseInt(prompt("Digite 0 para sair"))
+    function MostrarExercicio8(){
+        let escolha = -5;
+        let idades = [];
+        while(escolha != 0){
+            escolha = parseInt(prompt("Digite uma idade"))
+            if(escolha != 0){
+                idades.push(escolha)
+            }
         }
-        while(sair == 0)
-        alert(vetor)
-        
+        checarIdades(idade);
     }
 
+    /* Falta 
+    
+        function checarIdades(variavel){
+            let maiorIdade = [];
+            let menorIdade = [];
+            for(let x = 0; x < variavel.length; x++){
+                if(variavel[X] >= 18){
+                    maiorIdade.push(variavel[x]);
+                }
+                else{
+                    menorIdade.push(variavel[x]);
+                }
+            }
+            alert("Maior idade: " + maiorIdade.toString() + "\nMenor Idade: " + menorIdade.toString() + "\nNúmero de maioridade: " 
+            + maiorIdade.length + "Número de menoridade: " + menorIdade.length )
+        }
+
+    function MostrarExercicio9(){
+        let numero = 0;
+        let vetor = [];
+        let continuar = 0;
+        do{;
+            numero = parseInt(prompt("Digite um numero"));
+            vetor.push(numero);
+            alert(vetor);
+            continuar = confirm("Deseja continuar? Aperte Ok para continuar, se não quiser aperte cancelar");
+        }
+        while(continuar == true){alert("Você saiu do sistema")};
+        DescobrirParImpar(vetor);
+    }
+    function DescobrirParImpar (vetor){
+        let impar = 0;
+        let par = 0;
+        for(let i = 0; i < vetor.length; i++){
+            if(vetor[i] % 2 == 0){
+                par++;
+                }
+                else{
+                    impar++;
+                    }
+            }
+            alert("Quantidade de números pares: " + par + "\nQuantidade de números ímparesres: " + impar);
+    }   
 
 </script>
