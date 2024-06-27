@@ -110,34 +110,32 @@
         }
     }
 
-    function MostrarExercicio8(){
+        function MostrarExercicio8(){
         let escolha = -5;
         let idades = [];
-        while(escolha != 0){
+        while(escolha!= 0){
             escolha = parseInt(prompt("Digite uma idade"))
-            if(escolha != 0){
+            if(escolha!= 0){
                 idades.push(escolha)
             }
         }
-        checarIdades(idade);
+        checarIdades(idades);
     }
 
-    /* Falta 
-    
-        function checarIdades(variavel){
-            let maiorIdade = [];
-            let menorIdade = [];
-            for(let x = 0; x < variavel.length; x++){
-                if(variavel[X] >= 18){
-                    maiorIdade.push(variavel[x]);
-                }
-                else{
-                    menorIdade.push(variavel[x]);
-                }
+    function checarIdades(variavel){
+        let maiorIdade = [];
+        let menorIdade = [];
+        for(let x = 0; x < variavel.length; x++){
+            if(variavel[x] >= 18){
+                maiorIdade.push(variavel[x]);
             }
-            alert("Maior idade: " + maiorIdade.toString() + "\nMenor Idade: " + menorIdade.toString() + "\nNúmero de maioridade: " 
-            + maiorIdade.length + "Número de menoridade: " + menorIdade.length )
+            else{
+                menorIdade.push(variavel[x]);
+            }
         }
+        alert("Maior idade: " + maiorIdade.toString() + "\nMenor Idade: " + menorIdade.toString() + "\nNúmero de maioridade: " 
+        + maiorIdade.length + "\nNúmero de menoridade: " + menorIdade.length);
+    }
 
     function MostrarExercicio9(){
         let numero = 0;
