@@ -1,34 +1,17 @@
 <script>
 
-    let sair = -5;
+    let bandasDeMusicas = [];
+    
 
-    let listaNome = []
-    let listaTipoMusica = []
-    let listaIntegrantes = []
-    let listaRanking = []
+    for(let x = 0;x<3;x++){
+        let banda = {};
+        banda.nome = prompt("Digite o nome da banda");
+        banda.genero = prompt("Digite o tipo de genero");
+        banda.numIntegrantes = parseInt(prompt("Digite o número de integrantes"));
+        banda.rankig = parseInt(prompt("Digite o tanto que você gostou de 1 a 10"));
 
-    function formularioBanda(){
-        let nome = prompt("DIgite o nome da banda");
-        listaNome.push(nome);
-
-        let tipoMusica = prompt("Digite o tipo de musica que a banda toca");
-        listaTipoMusica.push(tipoMusica);
-
-        let integrantes = parseInt(prompt("Digite o número de integrantes"));
-        listaIntegrantes.push(integrantes);
-
-        let ranking = parseInt(prompt("Digite o ranking do tanto que você gostou de 0 a 10"));
-        listaRanking.push(ranking)
+        bandasDeMusicas.push(banda);
+        alert(bandasDeMusicas);
     }
-
-do{
-
-    formularioBanda();
-
-    alert("")
-
-}
-
-while(sair != 0)
 
 </script>
