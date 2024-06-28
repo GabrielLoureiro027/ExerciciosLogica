@@ -1,0 +1,62 @@
+<script>
+
+let escolha = parseInt(prompt("Digite: 1 para Adição \nDigite: 2 para Subtração \nDigite: 3 para Multiplicação \nDigite: 4 para Divisão"))
+let adição;
+let subtração;
+let multiplicação;
+let divisao;
+
+let sair;
+
+function somar(){
+    let valor1 = parseInt(prompt("Digite um numero"))
+        let valor2 = parseInt(prompt("Digite outro numero"))
+        adição = valor1 + valor2
+        alert("Adição \nResultado da Adição: " + adição)
+        escolha = parseInt(prompt("Digite: 1 para Adição \nDigite: 2 para Subtração \nDigite: 3 para Multiplicação \nDigite: 4 para Divisão"))
+}
+function subtrair(){
+    let valor3 = parseInt(prompt("Digite um numero"))
+        let valor4 = parseInt(prompt("Digite outro numero"))
+        subtração = valor3 - valor4
+        alert("Subtração \nResultado da Subtração: " + subtração)
+        escolha = parseInt(prompt("Digite: 1 para Adição \nDigite: 2 para Subtração \nDigite: 3 para Multiplicação \nDigite: 4 para Divisão"))
+}
+function multiplicar(){
+    let valor5 = parseInt(prompt("Digite um numero"))
+        let valor6 = parseInt(prompt("Digite outro numero"))
+        multiplicação = valor5 * valor6
+        alert("Multiplicação \nResultado da Multiplicação: " + multiplicação)
+        escolha = parseInt(prompt("Digite: 1 para Adição \nDigite: 2 para Subtração \nDigite: 3 para Multiplicação \nDigite: 4 para Divisão"))
+}
+function dividir(){
+    let valor7 = parseInt(prompt("Digite um numero"))
+        let valor8 = parseInt(prompt("Digite outro numero"))
+        divisao = valor7 / valor8
+        alert("Divisão \nResultado da Divisão: " + divisao)
+        escolha = parseInt(prompt("Digite: 1 para Adição \nDigite: 2 para Subtração \nDigite: 3 para Multiplicação \nDigite: 4 para Divisão"))
+}
+
+
+do{
+    switch(escolha){
+    case 1:
+        somar();
+    break;
+    case 2:
+        subtrair();
+    break;
+    case 3:
+        multiplicar();
+    break;
+    case 4:
+        dividir();
+    break;
+
+}
+}
+while(sair == sair)
+
+
+
+</script>
