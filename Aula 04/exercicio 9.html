@@ -1,0 +1,19 @@
+<script>
+
+let valores;
+let valorMaior = 0;
+let valorMenor = 0;
+
+for(let x = 0; x<50; x++){
+    valores = prompt("Digite um valor: ")
+    if(valores<25){
+        valorMaior++;
+    }
+    else{
+        valorMenor++;
+    }
+}
+
+alert("Numeros com valores maiores: " + valorMaior + "\nNumeros com valores menor: " + valorMenor)
+
+</script>
