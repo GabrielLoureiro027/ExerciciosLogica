@@ -1,0 +1,16 @@
+<script>
+    let num = parseInt(prompt("Informe o numero para a tabuada: "));
+    let inicio = parseInt(prompt("Informe o inicio da tabuada: "));
+    let fim = parseInt(prompt("Informe o fim da tabuada: "));
+
+    let resultado = "";
+
+    for (let i = inicio; i <= fim; i++) {
+    let produto = num * i;
+    if (produto % 2 == 0) {
+        resultado += num + " x " + i + " = " + produto + "\n";
+    }
+    }
+
+    alert(resultado);
+</script>

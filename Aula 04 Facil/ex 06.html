@@ -1,0 +1,11 @@
+<script>
+    let vezes = parseInt(prompt("Informe quantas vezes voce deseja lancar o dado: "));
+
+    let resultado = "";
+    for (let i = 0; i < vezes; i++) {
+    let numero = Math.floor(Math.random() * 6) + 1;
+    resultado += "Lancamento " + (i + 1) + ": " + numero + "\n";
+    }
+
+    alert(resultado);
+</script>

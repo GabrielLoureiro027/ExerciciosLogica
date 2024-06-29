@@ -1,0 +1,16 @@
+<script>
+    let A = parseInt(prompt("Digite um valor inicial: "));
+
+    let resultado = 1;
+    let sequencia = "";
+
+    for (let i = A; i > 1; i--) {
+    resultado *= i;
+    sequencia += i;
+    if (i > 2) {
+        sequencia += " X ";
+    }
+    }
+
+    alert(A + "! = " + sequencia + " = " + resultado);
+</script>
